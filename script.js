@@ -2,10 +2,10 @@
 
 function palindrome(str){
 	let start = 0;
-   let end = s.length - 1;
+   let end = str.length - 1;
 
    while (end > start) {
-   if (s[start] !== s[end]) {
+   if (str[start] !== str[end]) {
     return false;
     }
     start++;
