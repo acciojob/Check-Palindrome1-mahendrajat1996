@@ -1,18 +1,11 @@
-// complete the given function
-
 function palindrome(str){
-	let start = 0;
-   let end = str.length - 1;
+	const formattedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-   while (end > start) {
-   if (str[start] !== str[end]) {
-    return false;
-    }
-    start++;
-   end--;
-}
+  // Reverse the formatted string
+  const reversedStr = formattedStr.split('').reverse().join('');
 
-return true;
+  // Check if the reversed string is equal to the formatted string
+  return formattedStr === reversedStr;
 
 }
 module.exports = palindrome
